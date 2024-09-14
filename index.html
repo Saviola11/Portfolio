@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Portfolio</title>
+		
+
+<link rel="stylesheet" href="dist/css/style.min.css" />
+<script
+	src="https://kit.fontawesome.com/bc51ca284b.js"
+	crossorigin="anonymous"
+></script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+	href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+	rel="stylesheet"
+/>
+	</head>
+	<body>
+		<button class="hamburger" type="button">
+	<i class="fa-solid fa-bars"></i>
+</button>
+<nav class="nav nav-mobile">
+	<a class="nav__logo" href="index.html"
+		><i class="fa-solid fa-computer"></i
+	></a>
+	<a class="nav__link" href="#about">O mnie</a>
+	<a class="nav__link" href="#projectsjs">Projekty JS</a>
+	<a class="nav__link" href="#projectssite">Projekty Stron</a>
+	<a class="nav__link" href="#contact">Kontakt</a>
+</nav>
+<nav class="nav nav-desktop">
+	<a class="nav__logo" href="index.html"
+		><i class="fa-solid fa-computer"></i
+	></a>
+	<a class="nav__link" href="#about">O mnie</a>
+	<a class="nav__link" href="#projectsjs">Projekty JS</a>
+	<a class="nav__link" href="#projectssite">Projekty Stron</a>
+	<a class="nav__link" href="#contact">Kontakt</a>
+</nav>
+
+
+		<main>
+			<section class="about" id="about">
+				<div class="intro__box">
+					<div class="intro__box-img"></div>
+					<div class="intro__box-text">
+						<h2>Jestem <span>Marek</span>, miło Cię tu widzieć :)!</h2>
+					</div>
+				</div>
+
+				<div class="about__box">
+					<div class="about__box-text">
+						<h2>O mnie:</h2>
+						<p>
+							Projektowania uczę się od dwóch lat, mam za sobą zrealizowane
+							kilkanaście niekomercyjnych projektów, które przedstawiam Ci
+							poniżej. Doskonale odnajduje się w pracy samodzielnej oraz
+							zespołowej. Należę do grona ludzi otwartych, a otoczenie zarażam
+							swoim optymizmem. W pracy stawiam na jakość, nie ilość. :)
+						</p>
+					</div>
+				</div>
+			</section>
+			<section class="projects__js" id="projectsjs">
+				<h2 class="projects__js-title">Projekty wykonane w JS</h2>
+				<div class="projects__js-box box-border">
+					<div class="projects__js-box-card" onclick="void(0)">
+						<div
+							class="projects__js-box-card-img projects__js-box-card-img-one"
+						>
+							<h3 class="projects__js-box-card-img-title">8Ball Magic</h3>
+							<p class="projects__js-box-card-img-info">
+								<i class="fas fa-angle-double-right"></i>
+							</p>
+						</div>
+						<div class="projects__js-box-card-info">
+							<h3 class="projects__js-box-card-info-title">8Ball-magic</h3>
+							<ul class="projects__js-box-card-info-list">
+								<li class="projects__js-box-card-info-list-item">
+									Prosta aplikacja do generowania odpowiedzi
+								</li>
+								<li class="projects__js-box-card-info-list-item">
+									Odpowiedzi są generowane losowo z podanego zbioru
+								</li>
+								<li class="projects__js-box-card-info-list-item">
+									W projekcie znajduje się prosty walidator
+								</li>
+
+								<li class="projects__js-box-card-info-list-item">
+									Aplikacja reaguje na enter oraz kliknięcie przycisku
+								</li>
+							</ul>
+							<div class="projects__js-box-card-info-links">
+								<a
+									target="_blank"
+									href="https://github.com/Saviola11/8Ball-magic"
+									class="projects__js-box-card-info-links-one"
+									><i class="fa-brands fa-github"></i
+								></a>
+								<a
+									target="_blank"
+									href="https://saviola11.github.io/8Ball-magic/"
+									class="projects__js-box-card-info-links-two"
+									><i class="fa-regular fa-window-restore"></i
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="projects__js-box-card" onclick="void(0)">
+						<div
+							class="projects__js-box-card-img projects__js-box-card-img-two"
+						>
+							<h3 class="projects__js-box-card-img-title">Billsplitter</h3>
+							<p class="projects__js-box-card-img-info">
+								<i class="fas fa-angle-double-right"></i>
+							</p>
+						</div>
+						<div class="projects__js-box-card-info">
+							<h3 class="projects__js-box-card-info-title">Billsplitter</h3>
+							<ul class="projects__js-box-card-info-list">
+								<li class="projects__js-box-card-info-list-item">
+									Aplikacja służy do podzielenia kwoty rachunku pomiędzy liczbę
+									wskazanych osób
+								</li>
+								<li class="projects__js-box-card-info-list-item">
+									Pracowałem w gastro, więc tip to obowiązek :)!
+								</li>
+								<li class="projects__js-box-card-info-list-item">
+									Wykorzystanie parseFloat do przerobienia elementów
+									tablicopodobnych na liczbę
+								</li>
+
+								<li class="projects__js-box-card-info-list-item">
+									Wynik jest zaokrąglany do 2 miejsc po przecinku
+								</li>
+							</ul>
+							<div class="projects__js-box-card-info-links">
+								<a
+									target="_blank"
+									href="https://github.com/Saviola11/Billsplitter"
+									class="projects__js-box-card-info-links-one"
+									><i class="fa-brands fa-github"></i
+								></a>
+								<a
+									target="_blank"
+									href="https://saviola11.github.io/Billsplitter/"
+									class="projects__js-box-card-info-links-two"
+									><i class="fa-regular fa-window-restore"></i
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="projects__js-box-card" onclick="void(0)">
+						<div
+							class="projects__js-box-card-img projects__js-box-card-img-three"
+						>
+							<h3 class="projects__js-box-card-img-title">Exchange Rate app</h3>
+							<p class="projects__js-box-card-img-info">
+								<i class="fas fa-angle-double-right"></i>
+							</p>
+						</div>
+						<div class="projects__js-box-card-info">
+							<h3 class="projects__js-box-card-info-title">
+								Exchange Rate app
+							</h3>
+							<ul class="projects__js-box-card-info-list">
+								<li class="projects__js-box-card-info-list-item">
+									Aplikacja służąca do sprawdzenia kursu walut
+								</li>
+								<li class="projects__js-box-card-info-list-item">
+									Aktualne kursy pobierane są z wykorzystaniem API
+								</li>
+								<li class="projects__js-box-card-info-list-item">
+									Można zamienić waluty miejscami klikając środkowy przycisk
+								</li>
+
+								<li class="projects__js-box-card-info-list-item">
+									Do wyboru są 4 najpopularniejsze waluty
+								</li>
+							</ul>
+							<div class="projects__js-box-card-info-links">
+								<a
+									target="_blank"
+									href="https://github.com/Saviola11/Exchangerateapp"
+									class="projects__js-box-card-info-links-one"
+									><i class="fa-brands fa-github"></i
+								></a>
+								<a
+									target="_blank"
+									href="https://saviola11.github.io/Exchangerateapp/"
+									class="projects__js-box-card-info-links-two"
+									><i class="fa-regular fa-window-restore"></i
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="projects__js-box-card" onclick="void(0)">
+						<div
+							class="projects__js-box-card-img projects__js-box-card-img-four"
+						>
+							<h3 class="projects__js-box-card-img-title">
+								Kalkulator wydatków
+							</h3>
+							<p class="projects__js-box-card-img-info">
+								<i class="fas fa-angle-double-right"></i>
+							</p>
+						</div>
+						<div class="projects__js-box-card-info">
+							<h3 class="projects__js-box-card-info-title">
+								Kalkulator wydatków
+							</h3>
+							<ul class="projects__js-box-card-info-list">
+								<li class="projects__js-box-card-info-list-item">
+									Aplikacja służy do zarządzania finansami
+								</li>
+								<li class="projects__js-box-card-info-list-item">
+									Istnieją 4 kategorię wydatków
+								</li>
+								<li class="projects__js-box-card-info-list-item">
+									Do wyboru jest ciemny i jasny motyw aplikacji
+								</li>
+
+								<li class="projects__js-box-card-info-list-item">
+									Po uzupełnieniu wydatków i przychodów aplikacja obliczy nasz
+									dostępne środki
+								</li>
+							</ul>
+							<div class="projects__js-box-card-info-links">
+								<a
+									target="_blank"
+									href="https://github.com/Saviola11/Expense-calculator"
+									class="projects__js-box-card-info-links-one"
+									><i class="fa-brands fa-github"></i
+								></a>
+								<a
+									target="_blank"
+									href="https://saviola11.github.io/Expense-calculator/"
+									class="projects__js-box-card-info-links-two"
+									><i class="fa-regular fa-window-restore"></i
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="projects__js-box-card" onclick="void(0)">
+						<div
+							class="projects__js-box-card-img projects__js-box-card-img-five"
+						>
+							<h3 class="projects__js-box-card-img-title">My notes</h3>
+							<p class="projects__js-box-card-img-info">
+								<i class="fas fa-angle-double-right"></i>
+							</p>
+						</div>
+						<div class="projects__js-box-card-info">
+							<h3 class="projects__js-box-card-info-title">My notes</h3>
+							<ul class="projects__js-box-card-info-list">
+								<li class="projects__js-box-card-info-list-item">
+									Aplikacja do sporządzania notatek
+								</li>
+								<li class="projects__js-box-card-info-list-item">
+									Notatki mają 3 różne kategorię, odpowiadające różnym kolorom
+								</li>
+								<li class="projects__js-box-card-info-list-item">
+									Formularz do wpisania notatek pojawia się po naciśnięciu
+									przycisku "Dodaj"
+								</li>
+
+								<li class="projects__js-box-card-info-list-item">
+									Notatki można usuwać pojedynczo lub wszystkie naraz
+								</li>
+							</ul>
+							<div class="projects__js-box-card-info-links">
+								<a
+									target="_blank"
+									href="https://github.com/Saviola11/Mynotes"
+									class="projects__js-box-card-info-links-one"
+									><i class="fa-brands fa-github"></i
+								></a>
+								<a
+									target="_blank"
+									href="https://saviola11.github.io/Mynotes/"
+									class="projects__js-box-card-info-links-two"
+									><i class="fa-regular fa-window-restore"></i
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="projects__js-box-card" onclick="void(0)">
+						<div
+							class="projects__js-box-card-img projects__js-box-card-img-six"
+						>
+							<h3 class="projects__js-box-card-img-title">Tabs menu</h3>
+							<p class="projects__js-box-card-img-info">
+								<i class="fas fa-angle-double-right"></i>
+							</p>
+						</div>
+						<div class="projects__js-box-card-info">
+							<h3 class="projects__js-box-card-info-title">Tabs menu</h3>
+							<ul class="projects__js-box-card-info-list">
+								<li class="projects__js-box-card-info-list-item">
+									Prosta aplikacja do śledzenia odpowiedniej sekcji na stronie
+								</li>
+								<li class="projects__js-box-card-info-list-item">
+									Podczas przeglądania danej sekcji, jest ona podświetlona
+								</li>
+								<li class="projects__js-box-card-info-list-item">
+									Narzędznie wykorzystywane jest w serwisach informacyjnych typu
+									onet
+								</li>
+							</ul>
+
+							<div class="projects__js-box-card-info-links">
+								<a
+									target="_blank"
+									href="https://github.com/Saviola11/Tabs-menu"
+									class="projects__js-box-card-info-links-one"
+									><i class="fa-brands fa-github"></i
+								></a>
+								<a
+									target="_blank"
+									href="https://saviola11.github.io/Tabs-menu/"
+									class="projects__js-box-card-info-links-two"
+									><i class="fa-regular fa-window-restore"></i
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="projects__js-box-card" onclick="void(0)">
+						<div
+							class="projects__js-box-card-img projects__js-box-card-img-seven"
+						>
+							<h3 class="projects__js-box-card-img-title">Stoper</h3>
+							<p class="projects__js-box-card-img-info">
+								<i class="fas fa-angle-double-right"></i>
+							</p>
+						</div>
+						<div class="projects__js-box-card-info">
+							<h3 class="projects__js-box-card-info-title">Stoper</h3>
+							<ul class="projects__js-box-card-info-list">
+								<li class="projects__js-box-card-info-list-item">
+									Aplikacja do odmierzania czasu
+								</li>
+								<li class="projects__js-box-card-info-list-item">
+									Posiada 3 motywy kolorystyczne
+								</li>
+								<li class="projects__js-box-card-info-list-item">
+									W aplikacji znajduje się archwium, które pozwala na wgląd w
+									poprzednie pomiary
+								</li>
+
+								<li class="projects__js-box-card-info-list-item">
+									Po naciśnięciu "?" pojawi się instrukcja do aplikacji
+								</li>
+							</ul>
+							<div class="projects__js-box-card-info-links">
+								<a
+									target="_blank"
+									href="https://github.com/Saviola11/Stoper"
+									class="projects__js-box-card-info-links-eight"
+									><i class="fa-brands fa-github"></i
+								></a>
+								<a
+									target="_blank"
+									href="https://saviola11.github.io/Stoper/"
+									class="projects__js-box-card-info-links-two"
+									><i class="fa-regular fa-window-restore"></i
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="projects__js-box-card" onclick="void(0)">
+						<div
+							class="projects__js-box-card-img projects__js-box-card-img-eight"
+						>
+							<h3 class="projects__js-box-card-img-title">Time counter</h3>
+							<p class="projects__js-box-card-img-info">
+								<i class="fas fa-angle-double-right"></i>
+							</p>
+						</div>
+						<div class="projects__js-box-card-info">
+							<h3 class="projects__js-box-card-info-title">Time counter</h3>
+							<ul class="projects__js-box-card-info-list">
+								<li class="projects__js-box-card-info-list-item">
+									Aplikacja służy do odmierzania czasu pozostałego do konkretnej
+									daty
+								</li>
+								<li class="projects__js-box-card-info-list-item">
+									Można zmienić tło aplikacji, w tym celu należy wkleić link do
+									obrazka
+								</li>
+								<li class="projects__js-box-card-info-list-item">
+									Aplikacja pobierana automatycznie datę i godzinę z systemu
+									użytkownika
+								</li>
+							</ul>
+
+							<div class="projects__js-box-card-info-links">
+								<a
+									target="_blank"
+									href="https://github.com/Saviola11/Timecounter"
+									class="projects__js-box-card-info-links-one"
+									><i class="fa-brands fa-github"></i
+								></a>
+								<a
+									target="_blank"
+									href="https://saviola11.github.io/Timecounter/"
+									class="projects__js-box-card-info-links-two"
+									><i class="fa-regular fa-window-restore"></i
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="projects__js-box-card" onclick="void(0)">
+						<div
+							class="projects__js-box-card-img projects__js-box-card-img-nine"
+						>
+							<h3 class="projects__js-box-card-img-title">To do list</h3>
+							<p class="projects__js-box-card-img-info">
+								<i class="fas fa-angle-double-right"></i>
+							</p>
+						</div>
+						<div class="projects__js-box-card-info">
+							<h3 class="projects__js-box-card-info-title">To do list</h3>
+							<ul class="projects__js-box-card-info-list">
+								<li class="projects__js-box-card-info-list-item">
+									Aplikacja do tworzenia list zadań
+								</li>
+								<li class="projects__js-box-card-info-list-item">
+									Po dodaniu zadania można je edytować, jest do tego stworzony
+									osobny panel edycji
+								</li>
+								<li class="projects__js-box-card-info-list-item">
+									Zadania można oznaczyć jako zrobione lub usunąć je z listy
+								</li>
+							</ul>
+
+							<div class="projects__js-box-card-info-links">
+								<a
+									target="_blank"
+									href="https://github.com/Saviola11/Todolist"
+									class="projects__js-box-card-info-links-one"
+									><i class="fa-brands fa-github"></i
+								></a>
+								<a
+									target="_blank"
+									href="https://saviola11.github.io/Todolist/"
+									class="projects__js-box-card-info-links-two"
+									><i class="fa-regular fa-window-restore"></i
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="projects__js-box-card" onclick="void(0)">
+						<div
+							class="projects__js-box-card-img projects__js-box-card-img-ten"
+						>
+							<h3 class="projects__js-box-card-img-title">
+								Walidator formularza
+							</h3>
+							<p class="projects__js-box-card-img-info">
+								<i class="fas fa-angle-double-right"></i>
+							</p>
+						</div>
+						<div class="projects__js-box-card-info">
+							<h3 class="projects__js-box-card-info-title">
+								Walidator formularza
+							</h3>
+							<ul class="projects__js-box-card-info-list">
+								<li class="projects__js-box-card-info-list-item">
+									Aplikacja sprawdza poprawność danych wprowadzonych do
+									formularza zgodnie z zadanymi parametrami
+								</li>
+								<li class="projects__js-box-card-info-list-item">
+									Parametry są wskazane z wykorzystaniem wyrażenia regularnego
+									RegExp
+								</li>
+								<li class="projects__js-box-card-info-list-item">
+									Dopiero po spełnieniu wszystkich warunków formularza możliwe
+									jest jego wysłanie
+								</li>
+							</ul>
+
+							<div class="projects__js-box-card-info-links">
+								<a
+									target="_blank"
+									href="https://github.com/Saviola11/Walidator-formularza"
+									class="projects__js-box-card-info-links-one"
+									><i class="fa-brands fa-github"></i
+								></a>
+								<a
+									target="_blank"
+									href="https://saviola11.github.io/Walidator-formularza/"
+									class="projects__js-box-card-info-links-two"
+									><i class="fa-regular fa-window-restore"></i
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="projects__js-box-card" onclick="void(0)">
+						<div
+							class="projects__js-box-card-img projects__js-box-card-img-eleven"
+						>
+							<h3 class="projects__js-box-card-img-title">Wheater app</h3>
+							<p class="projects__js-box-card-img-info">
+								<i class="fas fa-angle-double-right"></i>
+							</p>
+						</div>
+						<div class="projects__js-box-card-info">
+							<h3 class="projects__js-box-card-info-title">Wheater app</h3>
+							<ul class="projects__js-box-card-info-list">
+								<li class="projects__js-box-card-info-list-item">
+									Gdyby Jarosław Kret miał wybrać ulubioną aplikację na stronie,
+									to byłaby to ta
+								</li>
+								<li class="projects__js-box-card-info-list-item">
+									Aplikacja pozwala na sprawdzenie pogody w danym miejscu,
+									wystarczy wpisać jego nazwę
+								</li>
+								<li class="projects__js-box-card-info-list-item">
+									Grafiki przedstawiające pogodę zmieniają się w zależności od
+									jej parametrów
+								</li>
+
+								<li class="projects__js-box-card-info-list-item">
+									Dane pobierane są z API pogodowego
+								</li>
+							</ul>
+							<div class="projects__js-box-card-info-links">
+								<a
+									target="_blank"
+									href="https://github.com/Saviola11/Wheaterapp"
+									class="projects__js-box-card-info-links-one"
+									><i class="fa-brands fa-github"></i
+								></a>
+								<a
+									target="_blank"
+									href="https://saviola11.github.io/Wheaterapp/"
+									class="projects__js-box-card-info-links-two"
+									><i class="fa-regular fa-window-restore"></i
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="projects__js-box-card" onclick="void(0)">
+						<div
+							class="projects__js-box-card-img projects__js-box-card-img-twelve"
+						>
+							<h3 class="projects__js-box-card-img-title">Drink searcher</h3>
+							<p class="projects__js-box-card-img-info">
+								<i class="fas fa-angle-double-right"></i>
+							</p>
+						</div>
+						<div class="projects__js-box-card-info">
+							<h3 class="projects__js-box-card-info-title">Drink searcher</h3>
+							<ul class="projects__js-box-card-info-list">
+								<li class="projects__js-box-card-info-list-item">
+									Prosta aplikacja służąca do wyszukiwania elementów w danym
+									zbiorze
+								</li>
+								<li class="projects__js-box-card-info-list-item">
+									Wystarczy wpisać literki, które zawiera dane słowo
+								</li>
+								<li class="projects__js-box-card-info-list-item">
+									Aplikacja reaguje dynamicznie na wpisywanie znaków na
+									klawiaturze
+								</li>
+							</ul>
+
+							<div class="projects__js-box-card-info-links">
+								<a
+									target="_blank"
+									href="https://github.com/Saviola11/Drink-searcher"
+									class="projects__js-box-card-info-links-one"
+									><i class="fa-brands fa-github"></i
+								></a>
+								<a
+									target="_blank"
+									href="https://saviola11.github.io/Drink-searcher/"
+									class="projects__js-box-card-info-links-two"
+									><i class="fa-regular fa-window-restore"></i
+								></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="projects__site" id="projectssite">
+				<h2 class="projects__site-title">Wykonane strony internetowe</h2>
+				<div class="projects__site-box box-border">
+					<div class="projects__site-box-card">
+						<div
+							class="projects__site-box-card-img projects__site-box-card-img-one"
+						>
+											</div>
+						<div class="projects__site-box-card-info">
+							<h3 class="projects__site-box-card-info-title">Pro gamers</h3>
+							<p class="projects__site-box-card-info-text">
+								Stworzyłem dynamiczną stronę "Pro Gamers" dla firmy z branży
+								gier wideo. Projekt obejmuje:
+							</p>
+
+							<ul class="projects__site-box-card-info-list">
+								<li class="projects__site-box-card-info-list-item">
+									Responsywny design i intuicyjną nawigację
+								</li>
+								<li class="projects__site-box-card-info-list-item">
+									Hero Banner z hasłem "Witajcie w Pro Gamers"
+								</li>
+								<li class="projects__site-box-card-info-list-item">
+									Portfolio z interaktywną galerią projektów
+								</li>
+								<li class="projects__site-box-card-info-list-item">
+									Przejrzysty cennik i kreatywna prezentacja zespołu
+								</li>
+								<li class="projects__site-box-card-info-list-item">
+									Animacje dzięki AOS i responsywność w oparciu o Bootstrap
+								</li>
+								<li class="projects__site-box-card-info-list-item">
+									Strona działa płynnie na różnych urządzeniach i platformach, z
+									naciskiem na UX i nowoczesne technologie
+								</li>
+							</ul>
+							<div class="projects__site-box-card-info-links">
+								<a
+									target="_blank"
+									href="https://github.com/Saviola11/Pro-gamers"
+									class="projects__site-box-card-info-links-one"
+									><i class="fa-brands fa-github"></i
+								></a>
+								<a
+									target="_blank"
+									href="https://saviola11.github.io/Pro-gamers/"
+									class="projects__site-box-card-info-links-two"
+									><i class="fa-regular fa-window-restore"></i
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="projects__site-box-card">
+						<div
+							class="projects__site-box-card-img projects__site-box-card-img-two"
+						></div>
+						<div class="projects__site-box-card-info">
+							<h3 class="projects__site-box-card-info-title">DG&M</h3>
+							<p class="projects__site-box-card-info-text">
+								Stworzyłem stronę "DG&M" dla firmy inwestycyjnej, z naciskiem na
+								elegancki, responsywny design i funkcjonalność:
+							</p>
+
+							<ul class="projects__site-box-card-info-list">
+								<li class="projects__site-box-card-info-list-item">
+									Intuicyjne menu (mobile/desktop) i sekcja Hero z hasłem firmy
+								</li>
+								<li class="projects__site-box-card-info-list-item">
+									Interaktywne sekcje: "Invest Smart", "Plan Your Future", z
+									przejrzystymi planami inwestycyjnymi
+								</li>
+								<li class="projects__site-box-card-info-list-item">
+									Sekcja galerii i newsletter do subskrypcji
+								</li>
+								<li class="projects__site-box-card-info-list-item">
+									Formularz kontaktowy i dynamiczne efekty wizualne
+								</li>
+								<li class="projects__site-box-card-info-list-item">
+									Strona wykorzystuje nowoczesne technologie CSS, animacje oraz
+									responsywność, zapewniając płynne działanie na wszystkich
+									urządzeniach.
+								</li>
+							</ul>
+							<div class="projects__site-box-card-info-links">
+								<a
+									target="_blank"
+									href="https://github.com/Saviola11/DGM-Site"
+									class="projects__site-box-card-info-links-one"
+									><i class="fa-brands fa-github"></i
+								></a>
+								<a
+									target="_blank"
+									href="https://saviola11.github.io/DGM-Site/"
+									class="projects__site-box-card-info-links-two"
+									><i class="fa-regular fa-window-restore"></i
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="projects__site-box-card">
+						<div
+							class="projects__site-box-card-img projects__site-box-card-img-three"
+						>
+							Z
+						</div>
+						<div class="projects__site-box-card-info">
+							<h3 class="projects__site-box-card-info-title">
+								Tropical Island
+							</h3>
+							<p class="projects__site-box-card-info-text">
+								Stworzyłem stronę "Tropical Islands" dla biura podróży
+								oferującego egzotyczne wakacje, łącząc elegancki, responsywny
+								design z interaktywnymi elementami:
+							</p>
+							<ul class="projects__site-box-card-info-list">
+								<li class="projects__site-box-card-info-list-item">
+									Responsywne menu hamburgerowe, płynnie dostosowujące się do
+									różnych urządzeń
+								</li>
+								<li class="projects__site-box-card-info-list-item">
+									Dynamiczna sekcja Hero z przyciągającym hasłem i zmieniającym
+									się tłem
+								</li>
+								<li class="projects__site-box-card-info-list-item">
+									Interaktywne karty ofertowe z efektem obracania i animacjami,
+									prezentujące wyspy
+								</li>
+								<li class="projects__site-box-card-info-list-item">
+									Animowane opinie klientów i przejrzysty formularz kontaktowy
+								</li>
+								<li class="projects__site-box-card-info-list-item">
+									Stopka z linkami do mediów społecznościowych i najważniejszych
+									podstron
+								</li>
+								<li class="projects__site-box-card-info-list-item">
+									Strona wykorzystuje nowoczesne technologie CSS i SCSS,
+									zapewniając płynność działania i estetyczny wygląd na
+									wszystkich urządzeniach
+								</li>
+							</ul>
+							<div class="projects__site-box-card-info-links">
+								<a
+									target="_blank"
+									href="https://github.com/Saviola11/Tropical-Island"
+									class="projects__site-box-card-info-links-one"
+									><i class="fa-brands fa-github"></i
+								></a>
+								<a
+									target="_blank"
+									href="https://saviola11.github.io/Tropical-Island/"
+									class="projects__site-box-card-info-links-two"
+									><i class="fa-regular fa-window-restore"></i
+								></a>
+							</div>
+						</div>
+					</div>
+					<div class="projects__site-box-card">
+						<div
+							class="projects__site-box-card-img projects__site-box-card-img-four"
+						></div>
+						<div class="projects__site-box-card-info">
+							<h3 class="projects__site-box-card-info-title">Forest</h3>
+							<p class="projects__site-box-card-info-text">
+								Stworzyłem stronę "Forest Group" dla firmy oferującej rekreację
+								na świeżym powietrzu, z naciskiem na przyjazny, responsywny
+								design i intuicyjną nawigację:
+							</p>
+
+							<ul class="projects__site-box-card-info-list">
+								<li class="projects__site-box-card-info-list-item">
+									Responsywne menu (mobile/desktop) oraz dynamiczna sekcja Hero
+									z hasłem "Najpiękniejszy park w Twojej okolicy!"
+								</li>
+								<li class="projects__site-box-card-info-list-item">
+									Interaktywne sekcje: "O nas" i "Oferta", prezentujące plany
+									pakietów: Demo, Standard, Premium, z wizualnym podziałem
+									funkcji
+								</li>
+								<li class="projects__site-box-card-info-list-item">
+									Stopka z linkami do podstron: "Historia", "Praca",
+									"Dokumenty"
+								</li>
+								<li class="projects__site-box-card-info-list-item">
+									Strona wykorzystuje narzędzia takie jak Gulp do automatyzacji
+									zadań, nowoczesne technologie CSS oraz animacje
+								</li>
+								<li class="projects__site-box-card-info-list-item">
+									Zapewnia płynność działania na wszystkich urządzeniach. Całość
+									zaprojektowana z myślą o pełnej funkcjonalności i estetyce na
+									każdym ekranie
+								</li>
+							</ul>
+							<div class="projects__site-box-card-info-links">
+								<a
+									target="_blank"
+									href="https://github.com/Saviola11/Forest"
+									class="projects__site-box-card-info-links-one"
+									><i class="fa-brands fa-github"></i
+								></a>
+								<a
+									target="_blank"
+									href="https://saviola11.github.io/Forest"
+									class="projects__site-box-card-info-links-two"
+									><i class="fa-regular fa-window-restore"></i
+								></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contact" id="contact">
+				<div class="contact__box box-border">
+					<div class="contact__box-title">
+						<h2>Serdecznie zapraszam do kontaktu:</h2>
+					</div>
+					<div class="contact__box-icons">
+						<a target="_blank" href="mailto:marekkorendal11@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+						<a  href="tel:+48576274384"><i class="fa-solid fa-phone"></i></a>
+						<a target="_blank" href="https://github.com/Saviola11/"
+							><i class="fa-brands fa-github"></i
+						></a>
+						<a target="_blank" href="https://www.linkedin.com/in/marek-korendał-a026b11a8/"><i class="fa-brands fa-linkedin"></i></a>
+						<a target="_blank" href="https://www.facebook.com/profile.php?id=100002305727543"
+							><i class="fa-brands fa-facebook-f"></i
+						></a>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer>
+	<div class="footer">
+		<p class="footer__mark">&copy; 2024 Maruś.</p>
+	</div>
+</footer>
+
+
+		<script src="../dist/js/main.min.js"></script>
+	</body>
+</html>

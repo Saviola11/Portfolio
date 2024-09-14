@@ -1,0 +1,69 @@
+@media (min-width: 992px) and (max-width: 1250px) {
+	.projects__js-box-card {
+		flex: 1 1 calc(50% - 4em); /* 2 cards per row */
+		max-width: calc(50% - 4em);
+
+		&-info {
+			&-links {
+				margin-bottom: 0.3em;
+				justify-content: space-around;
+				font-size: 1.8em;
+				cursor: pointer;
+				& i {
+					transition: color 0.3s, font-size 0.3s;
+					&:hover {
+						color: $main-hover;
+						font-size: 1.3em;
+					}
+				}
+				a {
+					text-decoration: none;
+				}
+			}
+
+			&-title {
+				font-size: 1.7em;
+			}
+
+			&-list {
+				position: relative;
+				height: 360px;
+
+				&-item {
+					font-size: 1em;
+					margin: 0.2em 0.7em;
+				}
+			}
+		}
+	}
+	.projects__site-box {
+		&-card {
+			flex: 1 1 100%; /* Karty zajmują pełną szerokość kontenera */
+			max-width: 100%; /* Maksymalna szerokość na 100% kontenera */
+			margin: 1em 0; /* Margines dostosowany do pełnej szerokości */
+		}
+	}
+	.nav {
+	}
+
+	.hamburger {
+		display: inline;
+		position: fixed;
+	}
+	.nav {
+		&-desktop {
+			position: fixed;
+		}
+	}
+
+	.intro__box-img {
+		width: 500px;
+		height: 600px;
+	}
+	.projects__site-box {
+		&-card {
+			flex: 1 1 calc(50% - 1em); /* 2 karty obok siebie na mniejszych ekranach */
+			margin: 1em; /* Mniejszy margines na mniejszych ekranach */
+		}
+	}
+}

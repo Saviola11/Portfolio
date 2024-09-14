@@ -1,0 +1,639 @@
+@import './colors';
+@import './mixins';
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+	height: 100%;
+}
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6rem;
+	overflow-x: hidden;
+	background-color: $bg-site;
+}
+.wrapper {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+// NAV
+.hamburger {
+	left: 0;
+	margin-top: 3%;
+	margin-left: 3%;
+	font-size: 2em;
+	height: 50px;
+	width: 50px;
+	z-index: 100;
+	color: $secondary-color;
+	cursor: pointer;
+	border: none;
+	background: none;
+	display: none;
+}
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	position: sticky;
+	top: 0;
+	height: 90px;
+	align-items: center;
+	background-color: $background-light;
+	z-index: 1000;
+	padding: 0 10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	&-mobile {
+		display: none;
+	}
+	&__logo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+		position: absolute;
+		font-size: 2.6em;
+		height: 100%;
+		width: auto;
+		left: 3%;
+		color: $main-color;
+		&:hover {
+			color: $main-hover;
+			background-color: $secondary-color;
+		}
+
+		i {
+			padding: 0.2em;
+		}
+	}
+	&__link {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.7em;
+		font-weight: bold;
+		text-transform: uppercase;
+		white-space: nowrap;
+		height: 100%;
+		width: auto;
+		padding: 0 0.9em;
+		text-decoration: none;
+		color: $main-color;
+		transition: color 0.3s, background-color 0.3s;
+		&-active {
+			color: $main-hover;
+			background-color: $secondary-color;
+		}
+		&:hover {
+			color: $main-hover;
+			background-color: $secondary-color;
+		}
+	}
+}
+
+.box-border {
+	position: relative;
+	&::before {
+		content: '';
+		position: absolute;
+		margin-left: 1%;
+		margin-bottom: 2%;
+		top: 0;
+		left: 0;
+		width: 100px;
+		height: 100px;
+		border-top: 0.3em solid $main-color;
+		border-left: 0.3em solid $main-color;
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		margin-right: 1%;
+		margin-top: 2%;
+		bottom: 0;
+		right: 0;
+		width: 100px;
+		height: 100px;
+		border-bottom: 0.3em solid $main-color;
+		border-right: 0.3em solid $main-color;
+	}
+}
+
+// INTRO
+.intro__box {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	position: relative;
+	height: 1100px;
+
+	&-img {
+		background-color: red;
+		height: 1100px;
+		width: 800px;
+		background-size: cover;
+		background-image: url('/src/img/my-photo-big.png');
+		background-color: $background-light;
+		clip-path: polygon(
+			56% 16%,
+			88% 31%,
+			96% 70%,
+			75% 100%,
+			25% 100%,
+			8% 60%,
+			23% 24%
+		);
+	}
+	&-text {
+		padding: 1em 3em;
+		letter-spacing: 0.2em;
+		font-size: 1.6em;
+		color: $secondary-color;
+
+		& span {
+			animation: text-flicker-in-glow 7s linear both;
+			color: $main-color;
+			font-size: 1.7em;
+		}
+	}
+}
+// ABOUT
+.about__box {
+	width: 60%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	height: auto;
+	padding-left: 6.5em;
+	margin-bottom: 4em;
+	&-text {
+		letter-spacing: 0.1em;
+
+		& h2 {
+			padding-bottom: 0.6em;
+			color: $main-color;
+			letter-spacing: 0.1em;
+			font-size: 1.9em;
+		}
+		& p {
+			line-height: 2em;
+			font-size: 1.4em;
+			color: $secondary-color;
+		}
+	}
+}
+
+// Project JS
+.projects__js {
+	height: auto;
+	width: 100%;
+
+	&-title {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		letter-spacing: 0.2em;
+		font-size: 2.9em;
+		color: $main-color;
+		padding: 2em 0;
+	}
+
+	&-box {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		gap: 0.6em;
+		height: 1500px;
+		padding: 2em 0;
+
+		&-card {
+			overflow: hidden;
+			position: relative;
+			box-sizing: border-box;
+			flex: 1 1 calc(33.33% - 4em);
+			max-width: calc(33.33% - 4em);
+			text-align: center;
+			perspective: 1000px;
+			transition: transform 0.3s, opacity 0.3s;
+			& i {
+				color: $main-color;
+				z-index: 2;
+				font-size: 1.5em;
+			}
+
+			&:hover {
+				.projects__js-box-card-img {
+					transform: rotateY(-180deg);
+					opacity: 0;
+					.projects__js-box-card-img-title {
+						display: none;
+					}
+				}
+				.projects__js-box-card-info {
+					transform: rotateY(0deg);
+					opacity: 1;
+					.projects__js-box-card-info-list-item {
+						animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+							both;
+						color: $secondary-color;
+					}
+				}
+			}
+
+			&-img {
+				transition: transform 0.6s, opacity 0.6s;
+				background-size: contain;
+				background-repeat: no-repeat;
+				background-position: center;
+				position: relative;
+				width: 100%;
+				height: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-start;
+
+				&::after {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-color: $img-shadow; // Użycie zmiennej cienia
+					z-index: 1; // Ustawienie z-index, aby pseudo-element był poniżej treści
+					pointer-events: none; // Ignorowanie zdarzeń kliknięcia
+				}
+
+				&::before {
+					content: '';
+					position: absolute;
+					background-color: $main-color;
+					width: 5px;
+					height: 5px;
+					top: 0;
+					left: 0;
+					animation: dotMove 4s linear infinite;
+				}
+
+				&-title {
+					font-size: 1.8em;
+					color: $main-color;
+					letter-spacing: 0.1em;
+					text-transform: uppercase;
+					margin: 0;
+					position: relative;
+					background-color: $text-bg;
+					box-sizing: border-box;
+					padding: 0.5em 0;
+					width: 100%;
+					height: 90px;
+					z-index: 2;
+				}
+
+				&-info {
+					position: absolute;
+					bottom: 0;
+					right: 0;
+					padding: 1em;
+					font-size: 2em;
+				}
+
+				&-one {
+					background-image: url('/src/img/projectjs-one.jpg');
+				}
+
+				&-two {
+					background-image: url('/src/img/projectjs-two.jpg');
+				}
+				&-three {
+					background-image: url('/src/img/projectjs-three.jpg');
+				}
+				&-four {
+					background-image: url('/src/img/projectjs-four.jpg');
+				}
+				&-five {
+					background-image: url('/src/img/projectjs-five.jpg');
+				}
+				&-six {
+					background-image: url('/src/img/projectjs-six.jpg');
+				}
+				&-seven {
+					background-image: url('/src/img/projectjs-seven.jpg');
+				}
+				&-eight {
+					background-image: url('/src/img/projectjs-eight.jpg');
+				}
+				&-nine {
+					background-image: url('/src/img/projectjs-nine.jpg');
+				}
+				&-ten {
+					background-image: url('/src/img/projectjs-ten.jpg');
+				}
+				&-eleven {
+					background-image: url('/src/img/projectjs-eleven.jpg');
+				}
+				&-twelve {
+					background-image: url('/src/img/projectjs-twelve.jpg');
+				}
+			}
+
+			&-info {
+				display: flex;
+				flex-direction: column; /* Ustawienie kierunku flexa na kolumny */
+				align-items: center;
+				justify-content: flex-start; /* Wyrównanie do góry */
+				padding-top: 0.8em; /* Dystans od góry */
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				background-color: $card-back-color;
+				background-image: $card-back-image;
+				opacity: 0;
+				transition: transform 3s, opacity 3s;
+
+				&-links {
+					display: flex;
+					flex-direction: row;
+					align-items: flex-end;
+					position: absolute;
+					width: 100%;
+					bottom: 0;
+					margin-bottom: 0.3em;
+					justify-content: space-around;
+					font-size: 1.8em;
+					cursor: pointer;
+					& i {
+						transition: color 0.3s, font-size 0.3s;
+						&:hover {
+							color: $main-hover;
+							font-size: 1.3em;
+						}
+					}
+					a {
+						text-decoration: none;
+					}
+				}
+
+				&-title {
+					font-size: 1.7em;
+					color: $main-color;
+					letter-spacing: 0.1em;
+					text-transform: uppercase;
+					margin: 0;
+					position: relative; /* Pozostawienie w tej samej pozycji */
+				}
+
+				&-list {
+					position: relative;
+					height: 360px;
+					display: flex;
+					flex-direction: column;
+					justify-content: flex-start;
+					align-items: center;
+					&-item {
+						list-style: inside;
+						color: $main-color;
+						font-size: 1em;
+						margin: 0.2em 0.7em;
+					}
+				}
+			}
+		}
+	}
+}
+
+// PROJECTS SITE
+.projects__site {
+	&-title {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		letter-spacing: 0.2em;
+		font-size: 2.9em;
+		color: $main-color;
+		padding: 2em 0;
+	}
+	&-box {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 100%;
+		gap: 1em;
+		height: auto;
+		margin-bottom: 3em;
+
+		&-card {
+			display: flex;
+			align-items: center;
+			overflow: hidden;
+			position: relative;
+			box-sizing: border-box;
+			flex: 1 1 calc(50% - 1em);
+			gap: 3em;
+			margin: 2em 4em;
+			height: auto;
+			max-width: 100%;
+			text-align: center;
+
+			&-img {
+				width: 70%;
+				height: 100%;
+				transition: transform 0.6s, opacity 0.6s;
+				background-color: $main-hover;
+				background-size: cover;
+				background-position: center;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				&::after {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 70%;
+					height: 100%;
+					background-color: $img-shadow;
+					z-index: 1;
+					pointer-events: none;
+				}
+
+				&-title {
+					font-size: 1.8em;
+					padding-top: 1em;
+					color: $main-color;
+					letter-spacing: 0.1em;
+					text-transform: uppercase;
+				}
+				&-one {
+					background-image: url('/src/img/projectsite-one.jpg');
+				}
+
+				&-two {
+					background-image: url('/src/img/projectsite-two.jpg');
+				}
+				&-three {
+					background-image: url('/src/img/projectsite-three.jpg');
+				}
+				&-four {
+					background-image: url('/src/img/projectsite-four.jpg');
+				}
+			}
+			&-info {
+				background-color: $background-light;
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				align-items: center;
+				width: 60%;
+				height: 100%;
+				position: relative;
+				z-index: 2;
+				&-title {
+					background-color: $text-bg;
+					font-weight: bold;
+					width: 100%;
+					font-size: 1.8em;
+					padding: 1em;
+					box-sizing: border-box;
+					color: $main-color;
+					letter-spacing: 0.1em;
+					text-transform: uppercase;
+					margin-top: 0;
+					margin-bottom: 1em; /* Dodanie marginesu dla lepszego odstępu */
+					position: relative;
+				}
+
+				&-text {
+					color: $main-color;
+					text-align: justify;
+					margin: 0;
+					word-wrap: break-word;
+					width: 100%;
+					height: auto;
+					max-width: 100%;
+					font-size: 1.7em;
+					padding: 0.5em 1em;
+				}
+				&-list {
+					padding: 0.7em 2em;
+					display: flex;
+					justify-content: flex-end;
+					flex-direction: column;
+					text-align: left;
+					align-items: left;
+					box-sizing: border-box;
+					&-item {
+						list-style: inside;
+						color: $main-color;
+						font-size: 1.4em;
+						margin: 1em;
+					}
+				}
+
+				&-links {
+					display: flex;
+					flex-direction: row;
+					align-items: flex-end;
+					width: 100%;
+					margin-top: auto; /* Przesunięcie do dołu */
+					justify-content: space-evenly;
+					font-size: 1.8em;
+					cursor: pointer;
+					& i {
+						transition: color 0.3s, font-size 0.3s;
+						&:hover {
+							color: $main-hover;
+							font-size: 1.2em;
+						}
+					}
+
+					a {
+						padding: 0.5em 0;
+						font-size: 2em;
+						color: $main-color;
+						text-decoration: none;
+					}
+				}
+			}
+		}
+	}
+}
+
+// CONTACT
+.contact {
+	&__box {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		position: relative;
+		align-items: center;
+		padding: 5em 0;
+		width: 100%;
+		height: 650px;
+		&-title {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			letter-spacing: 0.2em;
+			font-size: 1.9em;
+			color: $main-color;
+			padding: 2em 0;
+		}
+		&-icons {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			font-size: 3.9em;
+			& i {
+				padding: 2em 0.7em;
+				transition: color 0.3s, font-size 0.3s;
+				&:hover {
+					color: $main-hover;
+					font-size: 1.1em;
+				}
+			}
+			a {
+				text-decoration: none;
+				color: $main-color;
+			}
+		}
+	}
+}
+
+//FOOTER
+.footer {
+	background-color: $background-light;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 80px;
+	padding: 2em;
+
+	&__mark {
+		font-size: 1.8em;
+		color: $main-hover;
+		margin-top: 20px;
+	}
+}
+
+@import './small';
+@import './medium';
+@import './large';
+@import './animations';
